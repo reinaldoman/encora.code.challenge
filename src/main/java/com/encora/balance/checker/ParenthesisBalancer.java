@@ -8,9 +8,9 @@ public class ParenthesisBalancer {
 	
     public static boolean isBalaced(String expresion) {
     	//Initialize three counters for each of the parenthesis types
-        int contadorParentesis = 0;
-        int contadorCorchetes = 0;
-        int contadorLlaves = 0;
+        int parenthesisCounter = 0;
+        int squareBracketsCounter = 0;
+        int bracesCounter = 0;
         
         /**
          * Determine parenthesis type and if an opening parenthesis then increase the count of opened parenthesis for the corresponding type.
@@ -18,27 +18,27 @@ public class ParenthesisBalancer {
          */
         for (char caracter : expresion.toCharArray()) {
             if (caracter == '(') {
-                contadorParentesis++;
+                parenthesisCounter++;
             } else if (caracter == ')') {
-                contadorParentesis--;
+                parenthesisCounter--;
             } else if (caracter == '[') {
-                contadorCorchetes++;
+                squareBracketsCounter++;
             } else if (caracter == ']') {
-                contadorCorchetes--;
+                squareBracketsCounter--;
             } else if (caracter == '{') {
-                contadorLlaves++;
+                bracesCounter++;
             } else if (caracter == '}') {
-                contadorLlaves--;
+                bracesCounter--;
             }
             
             //If one of the counters is lower than zero it means and opening parenthesis is missing
-            if (contadorParentesis < 0 || contadorCorchetes < 0 || contadorLlaves < 0) {
+            if (parenthesisCounter < 0 || squareBracketsCounter < 0 || bracesCounter < 0) {
                 return false;
             }
         }
         
         //If all of the counters are zero at the end it means the expression is balanced.
-        return contadorParentesis == 0 && contadorCorchetes == 0 && contadorLlaves == 0;
+        return parenthesisCounter == 0 && squareBracketsCounter == 0 && bracesCounter == 0;
     }
     
     public static void main(String[] args) {
