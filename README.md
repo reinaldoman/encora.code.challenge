@@ -1,8 +1,8 @@
 # Verificador de paréntesis balanceados
 
-Aquí se implementa funcionalidad para verificar si una expresión está balanceade teniendo en cuenta los paréntesis, llaves y corchetes que puedan ingresarse
+Implemented functionality to check if an expression is well balanced according to the opening and closing  order of parenthesis, braces, and square brackets
 
-## Table of Contents
+## Contents
 
 - [Installation](#installation)
 - [Run](#run)
