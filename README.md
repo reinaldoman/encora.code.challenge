@@ -1,4 +1,4 @@
-# Verificador de paréntesis balanceados
+# Balanced Parenthesis Checker
 
 Implemented functionality to check if an expression is well balanced according to the opening and closing  order of parenthesis, braces, and square brackets
 
@@ -9,6 +9,7 @@ Implemented functionality to check if an expression is well balanced according t
 - [JUnit](#junit)
 - [Coverage](#coverage)
 - [Analysis](#analysis)
+- [Evidences](#evidences)
 
 ## Installation
 
@@ -28,5 +29,9 @@ Execute class CheckBalancedParenthesis or execute 'ParenthesisBalanceCheckerTest
 ## Analysis
 
 ![codeAnalysis](https://github.com/reinaldoman/encora.code.challenge/assets/5559123/d60cb9d5-323d-41dc-91ce-96a0a5c1a89d)
+
+## Evidences
+
+![executionEvidence](https://github.com/reinaldoman/encora.code.challenge/assets/5559123/62622497-2626-4129-b9d8-69e6f988d6c2)
 
 
